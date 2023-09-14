@@ -5,10 +5,10 @@ import folium
 from json import JSONEncoder
 import json
 
-with open('line2.csv') as f:
-    print(f)
+# with open('333.csv') as f:
+#     print(f)
 
-df = pd.read_csv("./line2.csv",
+df = pd.read_csv("./555.csv",
                  encoding='UTF-8',
                  usecols=['X','Y'])
 
@@ -37,7 +37,7 @@ coord = np.array(df)
 # print(coord)
 
 # 좌표계 정보 설정
-p1_type = "epsg:5181"
+p1_type = "epsg:4326"
 p2_type = "epsg:4326"
 
 # project_array() 함수 실행
